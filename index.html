@@ -1,91 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>QRGenius - Simple QR Generator</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-    
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3550535610382365"
-     crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Free QR code generator with logo support. No signup, no tracking. Download PNG instantly.">
+  <title>QR Code Generator with Logo – Free & No Signup | QRGenius</title>
 
-    <style>
-        .active-tab { border-bottom: 2px solid #2563eb; color: #2563eb; }
-    </style>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- QR Code Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3550535610382365"
+    crossorigin="anonymous"></script>
+
+  <!-- Schema.org Rich Snippet -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "QRGenius",
+    "description": "Free QR code generator with logo support. No signup required.",
+    "applicationCategory": "DeveloperTool, Utility",
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "price": "0"
+    }
+  }
+  </script>
+
+  <style>
+    .active-tab { border-bottom: 2px solid #2563eb; color: #2563eb; }
+  </style>
 </head>
 <body class="bg-slate-50 font-sans antialiased text-slate-900">
 
-    <div class="max-w-xl mx-auto py-12 px-6">
-        <header class="text-center mb-10">
-            <h1 class="text-2xl font-semibold tracking-tight">QRGenius</h1>
-            <p class="text-slate-500 text-sm mt-1">Generate clean QR codes instantly</p>
-        </header>
-
-        <main class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8">
-            
-            <div class="flex space-x-6 mb-6 text-sm font-medium border-b border-slate-100">
-                <button id="tabText" onclick="switchMode('text')" class="pb-2 active-tab transition">Text / URL</button>
-                <button id="tabFile" onclick="switchMode('file')" class="pb-2 text-slate-400 hover:text-slate-600 transition">Image</button>
-            </div>
-
-            <div id="inputContainer" class="mb-8">
-                <div id="textMode">
-                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Content</label>
-                    <textarea 
-                        id="dataInput" 
-                        rows="3"
-                        placeholder="Type text or paste a link here..."
-                        class="w-full p-4 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition resize-none text-sm"
-                    >https://example.com</textarea>
-                </div>
-
-                <div id="fileMode" class="hidden text-center p-8 border-2 border-dashed border-slate-200 rounded-xl bg-slate-50">
-                    <label class="block text-sm text-slate-600 mb-2 font-medium italic">Small images work best</label>
-                    <input type="file" id="fileInput" accept="image/*" class="text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-xs file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100">
-                </div>
-            </div>
-
-            <div class="flex flex-col items-center">
-                <div class="p-3 bg-white border border-slate-100 rounded-lg shadow-inner">
-                    <div id="qrcode"></div>
-                </div>
-                
-                <button 
-                    onclick="downloadQR()" 
-                    class="mt-8 w-full bg-slate-900 hover:bg-slate-800 text-white text-sm font-medium py-3 px-6 rounded-xl transition duration-200 shadow-sm"
-                >
-                    Download Image (PNG)
-                </button>
-            </div>
-        </main>
-
-        <div class="mt-10 flex justify-center">
-            <div class="w-full min-h-[100px] bg-slate-100 rounded-xl border border-slate-200 flex items-center justify-center relative overflow-hidden">
-                
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="ca-pub-3550535610382365"
-                     data-ad-slot="IL_TUO_NUMERO_SLOT"
-                     data-ad-format="auto"
-                     data-full-width-responsive="true"></ins>
-                <script>
-                     (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-
-            </div>
-        </div>
-
-        <footer class="mt-12 text-center">
-            <p class="text-xs text-slate-400">100% Client-side. Your data is never uploaded.</p>
-            <div class="mt-4 flex justify-center space-x-4 text-xs font-medium text-slate-500">
-                <a href="#" class="hover:text-slate-800">Privacy Policy</a>
-                <span>&bull;</span>
-                <a href="#" class="hover:text-slate-800">About</a>
-            </div>
-        </footer>
+  <div class="max-w-xl mx-auto py-12 px-6">
+    <!-- SEO-friendly heading -->
+    <div class="text-center mb-6">
+      <h1 class="text-2xl font-bold text-gray-900">Free QR Code Generator with Logo</h1>
+      <p class="text-gray-600 mt-2 max-w-lg mx-auto">
+        Paste any URL or text to create a scannable QR code. Customize colors, add your logo, and download in PNG — all in your browser, no registration needed.
+      </p>
     </div>
 
-    <script src="script.js"></script>
+    <header class="text-center mb-10">
+      <h2 class="text-2xl font-semibold tracking-tight">QRGenius</h2>
+      <p class="text-slate-500 text-sm mt-1">Generate clean QR codes instantly</p>
+    </header>
+
+    <main class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8">
+      
+      <div class="flex space-x-6 mb-6 text-sm font-medium border-b border-slate-100">
+        <button id="tabText" onclick="switchMode('text')" class="pb-2 active-tab transition">Text / URL</button>
+        <button id="tabFile" onclick="switchMode('file')" class="pb-2 text-slate-400 hover:text-slate-600 transition">Image</button>
+      </div>
+
+      <div id="inputContainer" class="mb-8">
+        <div id="textMode">
+          <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Content</label>
+          <textarea 
+            id="dataInput" 
+            rows="3"
+            placeholder="Type text or paste a link here..."
+            class="w-full p-4 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition resize-none text-sm"
+          >https://example.com</textarea>
+        </div>
+
+        <div id="fileMode" class="hidden text-center p-8 border-2 border-dashed border-slate-200 rounded-xl bg-slate-50">
+          <label class="block text-sm text-slate-600 mb-2 font-medium italic">Small images work best</label>
+          <input type="file" id="fileInput" accept="image/*" class="text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-xs file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100">
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <div class="p-3 bg-white border border-slate-100 rounded-lg shadow-inner">
+          <div id="qrcode"></div>
+        </div>
+        
+        <button 
+          onclick="downloadQR()" 
+          class="mt-8 w-full bg-slate-900 hover:bg-slate-800 text-white text-sm font-medium py-3 px-6 rounded-xl transition duration-200 shadow-sm"
+        >
+          Download Image (PNG)
+        </button>
+      </div>
+    </main>
+
+    <!-- AdSense Banner -->
+    <div class="mt-10 flex justify-center">
+      <div class="w-full min-h-[100px] bg-slate-100 rounded-xl border border-slate-200 flex items-center justify-center relative overflow-hidden">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-3550535610382365"
+             data-ad-slot="gogole pls accetta"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+    </div>
+
+    <footer class="mt-12 text-center">
+      <p class="text-xs text-slate-400">100% Client-side. Your data is never uploaded.</p>
+      <div class="mt-4 flex justify-center space-x-4 text-xs font-medium text-slate-500">
+        <a href="#" class="hover:text-slate-800">Privacy Policy</a>
+        <span>&bull;</span>
+        <a href="#" class="hover:text-slate-800">About</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
